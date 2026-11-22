@@ -1,0 +1,15 @@
+langgraph
+langchain-core
+langchain-groq
+neo4j
+sentence-transformers
+pymupdf
+fastapi
+uvicorn[standard]
+streamlit
+python-dotenv
+pydantic
+tenacity
+langgraph-checkpoint-sqlite
+requests
+python-multipart

@@ -1,0 +1,466 @@
+{
+  "dataset_name": "NetGraph-RAG 32-Chapter Retrieval Evaluation",
+  "description": "One initial evaluation question per textbook chapter. Expected concepts are guidance for manual relevance assessment, not verified chunk-level ground truth.",
+  "questions": [
+    {
+      "id": "Q01",
+      "chapter_number": 1,
+      "category": "conceptual",
+      "question": "What is a computer network, and what are its main goals and uses?",
+      "expected_concepts": [
+        "computer network",
+        "resource sharing",
+        "communication",
+        "network goals"
+      ]
+    },
+    {
+      "id": "Q02",
+      "chapter_number": 2,
+      "category": "factual",
+      "question": "What are the layers of the OSI model, and what is the main responsibility of each layer?",
+      "expected_concepts": [
+        "OSI model",
+        "physical layer",
+        "data link layer",
+        "network layer",
+        "transport layer",
+        "session layer",
+        "presentation layer",
+        "application layer"
+      ]
+    },
+    {
+      "id": "Q03",
+      "chapter_number": 3,
+      "category": "conceptual",
+      "question": "How are data and signals represented in data communications, and how do analog and digital signals differ?",
+      "expected_concepts": [
+        "data",
+        "signals",
+        "analog signal",
+        "digital signal",
+        "periodic signal",
+        "nonperiodic signal"
+      ]
+    },
+    {
+      "id": "Q04",
+      "chapter_number": 4,
+      "category": "comparative",
+      "question": "Compare line coding and block coding in digital transmission. What purpose does each serve?",
+      "expected_concepts": [
+        "line coding",
+        "block coding",
+        "digital transmission",
+        "synchronization",
+        "redundancy"
+      ]
+    },
+    {
+      "id": "Q05",
+      "chapter_number": 5,
+      "category": "conceptual",
+      "question": "How is information transmitted using analog signals, and what are the main analog modulation techniques?",
+      "expected_concepts": [
+        "analog transmission",
+        "amplitude modulation",
+        "frequency modulation",
+        "phase modulation"
+      ]
+    },
+    {
+      "id": "Q06",
+      "chapter_number": 6,
+      "category": "comparative",
+      "question": "Compare multiplexing and spreading techniques, including how they allow multiple signals or users to share a communication medium.",
+      "expected_concepts": [
+        "multiplexing",
+        "FDM",
+        "TDM",
+        "WDM",
+        "spreading",
+        "CDMA"
+      ]
+    },
+    {
+      "id": "Q07",
+      "chapter_number": 7,
+      "category": "factual",
+      "question": "What are the main types of transmission media, and how do guided and unguided media differ?",
+      "expected_concepts": [
+        "transmission media",
+        "guided media",
+        "unguided media",
+        "twisted-pair cable",
+        "coaxial cable",
+        "optical fiber",
+        "radio waves"
+      ]
+    },
+    {
+      "id": "Q08",
+      "chapter_number": 8,
+      "category": "comparative",
+      "question": "Compare circuit switching, packet switching, and message switching in terms of connection setup, resource use, and data delivery.",
+      "expected_concepts": [
+        "circuit switching",
+        "packet switching",
+        "message switching",
+        "connection setup",
+        "store-and-forward"
+      ]
+    },
+    {
+      "id": "Q09",
+      "chapter_number": 9,
+      "category": "conceptual",
+      "question": "How do telephone networks and cable networks provide data transmission services?",
+      "expected_concepts": [
+        "telephone network",
+        "DSL",
+        "cable network",
+        "data transmission",
+        "access network"
+      ]
+    },
+    {
+      "id": "Q10",
+      "chapter_number": 10,
+      "category": "factual",
+      "question": "What is the difference between error detection and error correction, and how do parity checks and CRC help detect errors?",
+      "expected_concepts": [
+        "error detection",
+        "error correction",
+        "parity check",
+        "CRC",
+        "checksum",
+        "Hamming code"
+      ]
+    },
+    {
+      "id": "Q11",
+      "chapter_number": 11,
+      "category": "conceptual",
+      "question": "What functions does the data link control layer perform to provide reliable communication between directly connected nodes?",
+      "expected_concepts": [
+        "data link control",
+        "framing",
+        "flow control",
+        "error control",
+        "ARQ"
+      ]
+    },
+    {
+      "id": "Q12",
+      "chapter_number": 12,
+      "category": "comparative",
+      "question": "Compare random access, controlled access, and channelization methods used for multiple access.",
+      "expected_concepts": [
+        "multiple access",
+        "random access",
+        "controlled access",
+        "channelization",
+        "ALOHA",
+        "CSMA",
+        "TDMA",
+        "FDMA",
+        "CDMA"
+      ]
+    },
+    {
+      "id": "Q13",
+      "chapter_number": 13,
+      "category": "factual",
+      "question": "How does Ethernet operate on a wired LAN, and what roles do Ethernet frames and MAC addresses play?",
+      "expected_concepts": [
+        "Ethernet",
+        "wired LAN",
+        "Ethernet frame",
+        "MAC address",
+        "CSMA/CD",
+        "switch"
+      ]
+    },
+    {
+      "id": "Q14",
+      "chapter_number": 14,
+      "category": "comparative",
+      "question": "Compare infrastructure and ad hoc wireless LAN configurations, and explain the roles of access points and wireless stations.",
+      "expected_concepts": [
+        "wireless LAN",
+        "infrastructure mode",
+        "ad hoc mode",
+        "access point",
+        "station",
+        "IEEE 802.11"
+      ]
+    },
+    {
+      "id": "Q15",
+      "chapter_number": 15,
+      "category": "relationship-based",
+      "question": "How do bridges, switches, routers, backbone networks, and VLANs work together to connect and organize LANs?",
+      "expected_concepts": [
+        "LAN connection",
+        "bridge",
+        "switch",
+        "router",
+        "backbone network",
+        "VLAN"
+      ]
+    },
+    {
+      "id": "Q16",
+      "chapter_number": 16,
+      "category": "comparative",
+      "question": "How do cellular telephone networks and satellite networks provide wireless WAN connectivity, and what are their key differences?",
+      "expected_concepts": [
+        "wireless WAN",
+        "cellular network",
+        "satellite network",
+        "cell",
+        "handoff",
+        "coverage"
+      ]
+    },
+    {
+      "id": "Q17",
+      "chapter_number": 17,
+      "category": "factual",
+      "question": "What are SONET and SDH, and how do their frame structures and hierarchy support high-speed optical networking?",
+      "expected_concepts": [
+        "SONET",
+        "SDH",
+        "optical network",
+        "synchronous transmission",
+        "frame",
+        "STS",
+        "STM"
+      ]
+    },
+    {
+      "id": "Q18",
+      "chapter_number": 18,
+      "category": "conceptual",
+      "question": "How do virtual-circuit networks work, and what are the roles of Frame Relay and ATM?",
+      "expected_concepts": [
+        "virtual circuit",
+        "Frame Relay",
+        "ATM",
+        "PVC",
+        "SVC",
+        "cell"
+      ]
+    },
+    {
+      "id": "Q19",
+      "chapter_number": 19,
+      "category": "factual",
+      "question": "What is logical addressing, and how are IPv4 addresses divided into network and host portions?",
+      "expected_concepts": [
+        "logical addressing",
+        "IPv4 address",
+        "network portion",
+        "host portion",
+        "classless addressing",
+        "subnetting"
+      ]
+    },
+    {
+      "id": "Q20",
+      "chapter_number": 20,
+      "category": "conceptual",
+      "question": "What are the main responsibilities of the Internet Protocol, and how does IP provide connectionless, best-effort packet delivery?",
+      "expected_concepts": [
+        "Internet Protocol",
+        "IP",
+        "datagram",
+        "connectionless",
+        "best-effort delivery",
+        "IPv4",
+        "IPv6"
+      ]
+    },
+    {
+      "id": "Q21",
+      "chapter_number": 21,
+      "category": "relationship-based",
+      "question": "How do ARP, ICMP, and IP multicasting support address mapping, error reporting, and one-to-many packet delivery?",
+      "expected_concepts": [
+        "ARP",
+        "address mapping",
+        "ICMP",
+        "error reporting",
+        "multicasting",
+        "IP"
+      ]
+    },
+    {
+      "id": "Q22",
+      "chapter_number": 22,
+      "category": "relationship-based",
+      "question": "How do delivery, forwarding, and routing differ, and how does a router use a routing table to forward packets?",
+      "expected_concepts": [
+        "delivery",
+        "forwarding",
+        "routing",
+        "router",
+        "routing table",
+        "next hop"
+      ]
+    },
+    {
+      "id": "Q23",
+      "chapter_number": 23,
+      "category": "comparative",
+      "question": "Compare UDP, TCP, and SCTP in terms of connection setup, reliability, flow control, and the type of data delivery they provide.",
+      "expected_concepts": [
+        "UDP",
+        "TCP",
+        "SCTP",
+        "process-to-process delivery",
+        "reliability",
+        "flow control",
+        "connection-oriented"
+      ]
+    },
+    {
+      "id": "Q24",
+      "chapter_number": 24,
+      "category": "conceptual",
+      "question": "What causes network congestion, and how do congestion-control techniques and quality-of-service mechanisms address it?",
+      "expected_concepts": [
+        "congestion",
+        "congestion control",
+        "quality of service",
+        "QoS",
+        "traffic shaping",
+        "leaky bucket",
+        "token bucket"
+      ]
+    },
+    {
+      "id": "Q25",
+      "chapter_number": 25,
+      "category": "factual",
+      "question": "How does the Domain Name System translate domain names into IP addresses, and what roles do DNS servers and resource records play?",
+      "expected_concepts": [
+        "DNS",
+        "domain name",
+        "IP address",
+        "resolver",
+        "DNS server",
+        "resource record",
+        "hierarchical naming"
+      ]
+    },
+    {
+      "id": "Q26",
+      "chapter_number": 26,
+      "category": "comparative",
+      "question": "What are the purposes of remote logging, electronic mail, and file transfer protocols, and how do their client-server interactions differ?",
+      "expected_concepts": [
+        "remote logging",
+        "electronic mail",
+        "SMTP",
+        "POP3",
+        "IMAP",
+        "file transfer",
+        "FTP"
+      ]
+    },
+    {
+      "id": "Q27",
+      "chapter_number": 27,
+      "category": "conceptual",
+      "question": "How does the World Wide Web work, and how do HTTP requests and responses enable communication between browsers and web servers?",
+      "expected_concepts": [
+        "WWW",
+        "HTTP",
+        "URL",
+        "browser",
+        "web server",
+        "request",
+        "response",
+        "persistent connection"
+      ]
+    },
+    {
+      "id": "Q28",
+      "chapter_number": 28,
+      "category": "factual",
+      "question": "What is SNMP, and how do managers, agents, managed devices, and the management information base interact?",
+      "expected_concepts": [
+        "SNMP",
+        "network management",
+        "manager",
+        "agent",
+        "managed device",
+        "MIB",
+        "GET",
+        "SET",
+        "TRAP"
+      ]
+    },
+    {
+      "id": "Q29",
+      "chapter_number": 29,
+      "category": "conceptual",
+      "question": "What networking requirements do multimedia applications have, particularly for audio, video, delay, jitter, and bandwidth?",
+      "expected_concepts": [
+        "multimedia",
+        "audio",
+        "video",
+        "delay",
+        "jitter",
+        "bandwidth",
+        "real-time traffic"
+      ]
+    },
+    {
+      "id": "Q30",
+      "chapter_number": 30,
+      "category": "factual",
+      "question": "What are the main goals of cryptography, and how do symmetric-key and public-key encryption differ?",
+      "expected_concepts": [
+        "cryptography",
+        "confidentiality",
+        "encryption",
+        "symmetric key",
+        "public key",
+        "decryption",
+        "digital signature"
+      ]
+    },
+    {
+      "id": "Q31",
+      "chapter_number": 31,
+      "category": "relationship-based",
+      "question": "How do authentication, authorization, confidentiality, integrity, and availability contribute to network security?",
+      "expected_concepts": [
+        "network security",
+        "authentication",
+        "authorization",
+        "confidentiality",
+        "integrity",
+        "availability"
+      ]
+    },
+    {
+      "id": "Q32",
+      "chapter_number": 32,
+      "category": "relationship-based",
+      "question": "How do IPsec, SSL/TLS, PGP, VPNs, and firewalls protect communication and network boundaries, and how do their roles differ?",
+      "expected_concepts": [
+        "IPsec",
+        "SSL",
+        "TLS",
+        "PGP",
+        "VPN",
+        "firewall",
+        "network security"
+      ]
+    }
+  ]
+}

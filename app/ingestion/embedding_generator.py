@@ -1,0 +1,13 @@
+from sentence_transformers import SentenceTransformer
+from app.config import EMBEDDING_MODEL
+
+_model = None
+
+def get_embedding_model():
+    global _model
+    if _model is None:
+        _model = SentenceTransformer(EMBEDDING_MODEL)
+    return _model
+
+def embed_texts(texts):
+    return get_embedding_model().encode(texts, normalize_embeddings=True).tolist()
